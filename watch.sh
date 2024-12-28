@@ -10,7 +10,7 @@ sync_repo() {
     while true; do
         echo "Syncing with remote repository..."
         git pull origin "$BRANCH"
-        sleep 30  # Wait for 300 seconds (5 minutes)
+        sleep 300  # Wait for 300 seconds (5 minutes)
     done
 }
 
