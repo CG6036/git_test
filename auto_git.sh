@@ -10,6 +10,7 @@ do
     echo "Change detected, processing Git commands..."
 
     # Add, commit, and push changes
+    git pull origin "$BRANCH"
     git add .
     git commit -m "Auto-commit: New changes detected"
     git push origin "$BRANCH"
